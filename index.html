@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Hostel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>Campus Hostel GH</h1>
+</header>
+
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab active" onclick="switchTab('ucc', event)">UCC</button>
+  <button class="tab" onclick="switchTab('knust', event)">KNUST</button>
+  <button class="tab" onclick="switchTab('ug', event)">UG</button>
+  <button class="tab" onclick="switchTab('uew', event)">UEW</button>
+</div>
+
+<!-- SEARCH BAR -->
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search hostel..." onkeyup="searchHostels()">
+</div>
+
+
+<!-- ⭐ CAMPUS HOSTELS SECTIONS ⭐ -->
+
+<!-- UCC -->
+<div class="hostels active" id="ucc">
+
+  <div class="hostel-card" data-name="Evandy Hostel" data-location="KNUST, Kumasi">
+    
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="/images/hostel.jpg">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+      </div>
+      <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+      <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    </div>
+
+    <h3>Default Hostel</h3>
+    <p>Room Type: Two in a Room</p>
+    <p>Price: GHS 5,000 / Semester</p>
+    <p>Status: <strong style="color:green;">Available</strong></p>
+    <p><strong>Location:</strong> Ayensu Estate, UCC</p>
+
+    <a href="https://www.google.com/maps?q=6.6730,-1.5650" target="_blank" class="map-link">📍 View on Map</a>
+    <a href="https://wa.me/233204790079" target="_blank" class="book-btn">Book on WhatsApp</a>
+  </div>
+   <div class="hostel-card" data-name="Evandy Hostel" data-location="KNUST, Kumasi">
+    
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+      </div>
+      <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+      <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    </div>
+
+    <h3>Default Hostel</h3>
+    <p>Room Type: Two in a Room</p>
+    <p>Price: GHS 5,000 / Semester</p>
+    <p>Status: <strong style="color:green;">Available</strong></p>
+    <p><strong>Location:</strong> Ayensu Estate, UCC</p>
+
+    <a href="https://www.google.com/maps?q=6.6730,-1.5650" target="_blank" class="map-link">📍 View on Map</a>
+    <a href="https://wa.me/233204790079" target="_blank" class="book-btn">Book on WhatsApp</a>
+  </div>
+   <div class="hostel-card" data-name="Evandy Hostel" data-location="KNUST, Kumasi">
+    
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+      </div>
+      <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+      <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    </div>
+
+    <h3>EDefault Hostel</h3>
+    <p>Room Type: Two in a Room</p>
+    <p>Price: GHS 5,000 / Semester</p>
+    <p>Status: <strong style="color:green;">Available</strong></p>
+    <p><strong>Location:</strong> Ayensu Estate, UCC</p>
+
+    <a href="https://www.google.com/maps?q=6.6730,-1.5650" target="_blank" class="map-link">📍 View on Map</a>
+    <a href="https://wa.me/233204790079" target="_blank" class="book-btn">Book on WhatsApp</a>
+  </div>
+
+</div>
+
+<!-- KNUST -->
+<div class="hostels" id="knust">
+
+  <div class="hostel-card" data-name="Atlantic Hostel" data-location="UCC, Cape Coast">
+
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+      </div>
+      <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+      <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    </div>
+
+    <h3>Default Hostel</h3>
+    <p>Room Type: Three in a Room</p>
+    <p>Price: GHS 4,200 / Semester</p>
+    <p>Status: <strong style="color:red;">Full</strong></p>
+    <p><strong>Location:</strong>  Estate, KNUST</p>
+
+    <a href="https://www.google.com/maps?q=5.1036,-1.2795" target="_blank" class="map-link">📍 View on Map</a>
+    <a href="https://wa.me/233204790079" target="_blank" class="book-btn">Book on WhatsApp</a>
+
+  </div>
+
+</div>
+
+<!-- UG -->
+<div class="hostels" id="ug">
+
+  <div class="hostel-card" data-name="Pent Hostel" data-location="Legon, Accra">
+
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+      </div>
+      <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+      <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    </div>
+
+    <h3>Pent Hostel</h3>
+    <p>Room Type: One in a Room</p>
+    <p>Price: GHS 7,800 / Semester</p>
+    <p>Status: <strong style="color:green;">Available</strong></p>
+    <p><strong>Location:</strong> UG, Legon</p>
+
+    <a href="https://www.google.com/maps?q=5.6500,-0.1869" target="_blank" class="map-link">📍 View on Map</a>
+    <a href="https://wa.me/233204790079" target="_blank" class="book-btn">Book on WhatsApp</a>
+
+  </div>
+
+</div>
+
+<!-- UEW -->
+<div class="hostels" id="uew">
+
+  <div class="hostel-card" data-name="North Campus Hostel" data-location="UEW, Winneba">
+
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+        <img src="/images/hoste1.jpg">
+        <img src="/images/hostel.jpg">
+      </div>
+      <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+      <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    </div>
+
+    <h3>Default Hostel</h3>
+    <p>Room Type: Two in a Room</p>
+    <p>Price: GHS 3,800 / Semester</p>
+    <p>Status: <strong style="color:green;">Available</strong></p>
+    <p><strong>Location:</strong> UEW, Winneba</p>
+
+    <a href="https://www.google.com/maps?q=5.3621,-0.6250" target="_blank" class="map-link">📍 View on Map</a>
+    <a href="https://wa.me/233204790079" target="_blank" class="book-btn">Book on WhatsApp</a>
+
+  </div>
+
+</div>
+
+
+<footer>
+  <p>© 2025 Campus Hostel GH Design By ElijahIQ. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
